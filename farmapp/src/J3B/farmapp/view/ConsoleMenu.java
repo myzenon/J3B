@@ -1,8 +1,12 @@
-package J3B.farmapp.model.impl;
+package J3B.farmapp.view;
 
 
 import java.util.List;
 import java.util.Scanner;
+
+import J3B.farmapp.controller.GameController;
+import J3B.farmapp.model.impl.Plant;
+import J3B.farmapp.model.impl.Seed;
 
 public class ConsoleMenu {
 	private Scanner in;

@@ -1,6 +1,12 @@
-package J3B.farmapp.model.impl;
+package J3B.farmapp.controller;
 
 import java.util.List;
+
+import J3B.farmapp.model.impl.Bag;
+import J3B.farmapp.model.impl.GardenBed;
+import J3B.farmapp.model.impl.Plant;
+import J3B.farmapp.model.impl.Seed;
+import J3B.farmapp.view.ConsoleMenu;
 
 public class GameController {
 	private ConsoleMenu prompt;
