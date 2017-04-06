@@ -3,7 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package J3B.farmapp.model.impl;
+package J3B.farmapp.mainPackage;
+
+import J3B.farmapp.controller.GameController;
 
 /**
  *
