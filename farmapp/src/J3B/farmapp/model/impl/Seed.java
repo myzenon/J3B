@@ -14,7 +14,7 @@ public class Seed implements Plantable,Item{
 		return name;
 	}
 	public void setName(String name) {
-		this.name = name;
+		this.name = name;	
 	}
 	public void plant(){
 		
