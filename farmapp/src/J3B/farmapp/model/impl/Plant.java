@@ -44,7 +44,6 @@ public class Plant implements Growable {
         return name;
     }
 
-    @Override
     public void grow() {
         if(age < age_types.length-1){
             if(days_to_age < days_before_growing - 1){
