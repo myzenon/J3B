@@ -42,8 +42,9 @@ public class GameController {
 	public boolean plantSeed(Seed seed) {
 		if (gardenBed.getPlants().size() < gardenBed.getCapacity()) {
 			gardenBed.addPlant(seed.getPlant());
+			return true;
 		}
-		return true;
+		return false;
 	}
 
 	public void sleep() {
