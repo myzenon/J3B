@@ -48,7 +48,6 @@ public class GameController {
 	}
 
 	public void sleep() {
-
 		for (int i = 0; i < gardenBed.getPlants().size(); i++) {
 			gardenBed.getPlants().get(i).grow();
 		}
