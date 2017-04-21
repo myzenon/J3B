@@ -18,11 +18,7 @@ public class SeedTest {
 		assertEquals(setName.getName(), "apple seed");
 	}
 	
-	@Test
-	public void getPlant() {
-		Seed getPlant = new Seed("papaya seed",new Plant("papaya" , 1));
-		assertEquals(getPlant.getPlant(),new Plant("papaya" , 1));
-	}
+
 	
 
 }
