@@ -5,26 +5,20 @@
  */
 package J3B.farmapp.model.impl;
 
-/**
- *
- * @author bewblaze01
- */
+import J3B.farmapp.model.Item;
+
 import java.util.ArrayList;
 import java.util.List;
 
 public class Bag {
 
-    private List<Seed> seeds;
+    private List<Item> items = new ArrayList<Item>();
 
-    public Bag() {
-        seeds = new ArrayList<Seed>();
+    public boolean addItem(Item item) {
+        return this.items.add(item);
     }
 
-    public List<Seed> getSeeds() {
-        return seeds;
-    }
-
-    public void addSeed(Seed seed) {
-        seeds.add(seed);
+    public List<Item> getItems() {
+        return items;
     }
 }

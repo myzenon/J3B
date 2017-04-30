@@ -1,34 +1,42 @@
 package J3B.farmapp.model.impl;
 
+import J3B.farmapp.model.Growable;
+import J3B.farmapp.model.Plantable;
+
 import java.util.ArrayList;
 import java.util.List;
 
 public class GardenBed {
 
-    private List plants = new ArrayList<Plant>();
+    private List<Growable> plants = new ArrayList<Growable>();
     private int capacity;
+
     public GardenBed(int capacity){
     	this.capacity = capacity;
     }
+
     public int getCapacity() {
-		return capacity;
+		return this.capacity;
 	}
+
 	public void setCapacity(int capacity) {
-		this.capacity = capacity;
-	}
-	public void setPlants(List plants) {
-		this.plants = plants;
-	}
-	public List<Plant> getPlants() {
-        return plants;
+        this.capacity = capacity;
     }
 
-    public void addPlant(Plant plant) {
-    	plants.add(plant);
+	public List<Growable> getPlants() {
+        return this.plants;
     }
 
-    public void removePlant(int position) {
-    	plants.remove(position);
+    public boolean addPlant(Plantable plant) {
+        if(this.plants.size() < capacity) {
+            this.plants.add(plant.plant());
+            return true;
+        }
+        return false;
+    }
+
+    public boolean removePlant(Growable plant) {
+    	return this.plants.remove(plant);
     }
 
 }

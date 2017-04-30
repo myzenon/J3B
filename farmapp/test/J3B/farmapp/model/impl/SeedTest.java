@@ -1,28 +1,23 @@
 package J3B.farmapp.model.impl;
 
 import static org.junit.Assert.*;
-import J3B.farmapp.model.impl.Seed;
+
+import J3B.farmapp.model.Growable;
 import org.junit.Test;
 
 public class SeedTest {
 
 	@Test
 	public void getName() {
-		Seed getName = new Seed("papaya seed",new Plant("papaya" , 1));
-		assertEquals(getName.getName(), "papaya seed" );
+		Seed seed = new Seed("papaya seed", new Plant("papaya" , 1));
+		assertEquals(seed.getName(), "papaya seed" );
 	}
-	@Test
-	public void setName(){
-		Seed setName = new Seed("", new Plant ("apple", 1));
-		setName.setName("apple seed");
-		assertEquals(setName.getName(), "apple seed");
-	}
-	
-	@Test
-	public void getPlant() {
-		Seed getPlant = new Seed("papaya seed",new Plant("papaya" , 1));
-		assertEquals(getPlant.getPlant(),new Plant("papaya" , 1));
-	}
-	
+
+    @Test
+    public void plant() {
+	    Plant plant = new Plant("papaya" , 1);
+        Seed seed = new Seed("papaya seed", plant);
+        assertEquals(seed.plant(), plant);
+    }
 
 }
